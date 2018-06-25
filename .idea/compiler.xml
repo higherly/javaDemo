@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="java-basic" />
+        <module name="java-collection" />
+        <module name="java-core" />
+        <module name="java-distributed" />
+        <module name="java-http" />
+        <module name="java-io" />
+        <module name="java-thread" />
+        <module name="javaspringmvc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-basic" target="1.6" />
+      <module name="java-collection" target="1.6" />
+      <module name="java-core" target="1.6" />
+      <module name="java-distributed" target="1.6" />
+      <module name="java-http" target="1.6" />
+      <module name="java-io" target="1.6" />
+      <module name="java-thread" target="1.6" />
+      <module name="javaDemo" target="1.6" />
+      <module name="javaspringMvc" target="1.6" />
+      <module name="javaspringmvc" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

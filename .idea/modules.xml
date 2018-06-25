@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-basic/java-basic.iml" filepath="$PROJECT_DIR$/java-basic/java-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-collection/java-collection.iml" filepath="$PROJECT_DIR$/java-collection/java-collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-core/java-core.iml" filepath="$PROJECT_DIR$/java-core/java-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-distributed/java-distributed.iml" filepath="$PROJECT_DIR$/java-distributed/java-distributed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-http/java-http.iml" filepath="$PROJECT_DIR$/java-http/java-http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-io/java-io.iml" filepath="$PROJECT_DIR$/java-io/java-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-thread/java-thread.iml" filepath="$PROJECT_DIR$/java-thread/java-thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaDemo.iml" filepath="$PROJECT_DIR$/javaDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaspringmvc/javaspringmvc.iml" filepath="$PROJECT_DIR$/javaspringmvc/javaspringmvc.iml" />
+    </modules>
+  </component>
+</project>
