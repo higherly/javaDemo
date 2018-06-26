@@ -1,7 +1,13 @@
-/*
+/*http://www.runoob.com/design-pattern/template-pattern.html 设计模式
 1.谈谈你对spring的理解
 * 2.Spring中的设计模式
-*   a.代理模式 b.单例模式 c.模板方法模式 d.工厂模式
+*   a.代理模式
+*   b.单例模式       spring配置文件中的bean默认是单例，一个类只有一个实例，饿汉式和懒汉式。
+*   c.模板方法模式  用来解决代码重复问题，父类定义框架，子类定义具体的实现细节。
+*   d.工厂模式   1）简单工厂模式（Simple Factory） 2）工厂方法模式（Factory Method） 3）抽象工厂模式（Abstract Factory）
+ *   创建对象过程不会暴露出来，而是通过一个接口指向新创建的对象。https://www.cnblogs.com/yumo1627129/p/7197524.html
+*   e,观察者模式   定义对象之间一对多的依赖关系,当一个对象的状态发生变化时，所有依赖它的对象将得到通知并自动更新。如Listener，发布与订阅。
+*   f.前端控制器模式 Spring 提供了DispatcherServlet 来对请求进行统一管理。
 * 3.spring中的常用注解？
 *   @Component ：标准一个普通的spring Bean类。
     @Repository：标注一个DAO组件类。
@@ -16,7 +22,7 @@
     @Resource(import
     javax.annotation.Resource;)是J2EE的注解，@Autowired(
     import org.springframework.beans.factory.annotation.Autowired;)是Spring的注解
-* 4.
+* 4.简单介绍一下Spring bean 的生命周期？
 * 5.
 * 6.spring可以帮助我们做什么？
 *   a.spring控制反转可以根据配置文件自动创建和组装对象之间的依赖关系。
