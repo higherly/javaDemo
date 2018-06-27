@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 *
 *
 * */
-public class SpringBeanTest implements BeanNameAware,BeanFactoryAware,ApplicationContextAware,DisposableBean,InitializingBean{
+public class SpringBeanTest implements BeanNameAware,BeanFactoryAware,ApplicationContextAware,DisposableBean{
     private int age;
     private String name;
     public SpringBeanTest(String name){
@@ -42,9 +42,9 @@ public class SpringBeanTest implements BeanNameAware,BeanFactoryAware,Applicatio
     }
 
 
-    public void afterPropertiesSet() throws Exception {
+    /*public void afterPropertiesSet() throws Exception {
         System.out.println("bean初始化");
-    }
+    }*/
     public void init_method() throws Exception {
         System.out.println("bean初始化");
     }
@@ -54,8 +54,10 @@ public class SpringBeanTest implements BeanNameAware,BeanFactoryAware,Applicatio
     public void destroy_method(){
         System.out.println("bean销毁2");/*两种方式*/
     }
-
-    public static void main(String args[]){
+    public static void main(String args[]) throws Exception{
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        SpringBeanTest sp = (SpringBeanTest) ac.getBean("springBeanTest");
+        sp.destroy();
     }
 }
+

@@ -13,11 +13,9 @@
 		http://www.springframework.org/schema/context/spring-context.xsd
 		http://www.springframework.org/schema/aop
 		http://www.springframework.org/schema/aop/spring-aop.xsd">
-    
-    
-		<bean id="springBeanTest" class="spring.bean.test.SpringBeanTest" init-method="init_method" destroy-method="destroy_method">
+		<bean id="springBeanTest" class="spring.bean.test.SpringBeanTest" init-method="init_method" >
 			<constructor-arg value="gx"></constructor-arg>
 			<property name="age" value="11"></property>
 		</bean>
-
+		<bean class="spring.bean.test.BeanPostProcessorTest"></bean>
 </beans>
