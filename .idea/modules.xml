@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/java-distributed/java-distributed.iml" filepath="$PROJECT_DIR$/java-distributed/java-distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-http/java-http.iml" filepath="$PROJECT_DIR$/java-http/java-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-io/java-io.iml" filepath="$PROJECT_DIR$/java-io/java-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-spring/java-spring.iml" filepath="$PROJECT_DIR$/java-spring/java-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-thread/java-thread.iml" filepath="$PROJECT_DIR$/java-thread/java-thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaDemo.iml" filepath="$PROJECT_DIR$/javaDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaspringmvc/javaspringmvc.iml" filepath="$PROJECT_DIR$/javaspringmvc/javaspringmvc.iml" />

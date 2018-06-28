@@ -12,6 +12,7 @@
         <module name="java-distributed" />
         <module name="java-http" />
         <module name="java-io" />
+        <module name="java-spring" />
         <module name="java-thread" />
         <module name="javaspringmvc" />
       </profile>
@@ -23,6 +24,8 @@
       <module name="java-distributed" target="1.6" />
       <module name="java-http" target="1.6" />
       <module name="java-io" target="1.6" />
+      <module name="java-spring" target="1.6" />
+      <module name="java-springaop" target="1.6" />
       <module name="java-thread" target="1.6" />
       <module name="javaDemo" target="1.6" />
       <module name="javaspringMvc" target="1.6" />
