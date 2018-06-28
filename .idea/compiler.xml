@@ -12,24 +12,21 @@
         <module name="java-distributed" />
         <module name="java-http" />
         <module name="java-io" />
-        <module name="java-spring" />
         <module name="java-thread" />
         <module name="javaspringmvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="java-basic" target="1.6" />
-      <module name="java-collection" target="1.6" />
-      <module name="java-core" target="1.6" />
-      <module name="java-distributed" target="1.6" />
-      <module name="java-http" target="1.6" />
-      <module name="java-io" target="1.6" />
-      <module name="java-spring" target="1.6" />
-      <module name="java-springaop" target="1.6" />
-      <module name="java-thread" target="1.6" />
-      <module name="javaDemo" target="1.6" />
+      <module name="java-basic" target="1.5" />
+      <module name="java-collection" target="1.5" />
+      <module name="java-core" target="1.5" />
+      <module name="java-distributed" target="1.5" />
+      <module name="java-http" target="1.5" />
+      <module name="java-io" target="1.5" />
+      <module name="java-thread" target="1.5" />
+      <module name="javaDemo" target="1.5" />
       <module name="javaspringMvc" target="1.6" />
-      <module name="javaspringmvc" target="1.6" />
+      <module name="javaspringmvc" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
