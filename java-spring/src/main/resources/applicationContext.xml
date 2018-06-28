@@ -18,4 +18,17 @@
 			<property name="age" value="11"></property>
 		</bean>
 		<bean class="spring.bean.test.BeanPostProcessorTest"></bean>
+	<!--基于注解-->
+	<!--<context:component-scan base-package="spring.aop.test"></context:component-scan>
+    <aop:aspectj-autoproxy proxy-target-class="false"></aop:aspectj-autoproxy>-->
+	<!--基于配置-->
+	<bean id="helloWorldImpl2" class="spring.aop.test.HelloWorldImpl2"></bean>
+	<bean id="helloWorldImpl2Aspect" class="spring.aop.test.HelloWorldImpl2Aspect"></bean>
+	<aop:config>
+		<aop:aspect ref="helloWorldImpl2Aspect">
+			<aop:pointcut id="allMethod" expression="execution(* spring.aop.test.HelloWorldImpl2.*(..))"></aop:pointcut>
+			<aop:before method="beforeSay" pointcut-ref="allMethod"></aop:before>
+			<aop:after method="afterSay" pointcut-ref="allMethod"></aop:after>
+		</aop:aspect>
+	</aop:config>
 </beans>
