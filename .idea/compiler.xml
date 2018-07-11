@@ -12,7 +12,13 @@
         <module name="java-distributed" />
         <module name="java-http" />
         <module name="java-io" />
+        <module name="java-jvm" />
+        <module name="java-redis" />
+        <module name="java-spring" />
+        <module name="java-springmvc" />
         <module name="java-thread" />
+        <module name="java-top" />
+        <module name="java-webbasic" />
         <module name="javaspringmvc" />
       </profile>
     </annotationProcessing>
@@ -20,10 +26,17 @@
       <module name="java-basic" target="1.5" />
       <module name="java-collection" target="1.5" />
       <module name="java-core" target="1.5" />
+      <module name="java-demo" target="1.5" />
       <module name="java-distributed" target="1.5" />
       <module name="java-http" target="1.5" />
       <module name="java-io" target="1.5" />
+      <module name="java-jvm" target="1.5" />
+      <module name="java-redis" target="1.5" />
+      <module name="java-spring" target="1.5" />
+      <module name="java-springmvc" target="1.7" />
       <module name="java-thread" target="1.5" />
+      <module name="java-top" target="1.5" />
+      <module name="java-webbasic" target="1.5" />
       <module name="javaDemo" target="1.5" />
       <module name="javaspringMvc" target="1.6" />
       <module name="javaspringmvc" target="1.7" />

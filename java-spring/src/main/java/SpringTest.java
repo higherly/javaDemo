@@ -30,6 +30,12 @@
 *   c.spring可以帮助我们管理数据库事务。
 *   d.spring可以与第三方框架，如mybatis，struts2无缝衔接。
 * 7.描述一下spring的事务？
+* 事务就是一系列的动作，它们被当作一个单独的工作单元。这些动作要么全部完成，要么全部不起作用,用来保证数据的一致性和完整性。
+* 有四个特点。
+* 支持两种事务。编程式事务将事务代码嵌入到业务方法中，来提供更加详细的事务管理。有两种方式:使用TransactionTemplate和直接使用PlatformTransactionManager
+* 声明式事务基于AOP实现，既能实现事务管理，又不影响业务代码的具体实现。
+* Spring并不直接管理事务，通过这个接口PlatformTransactionManager，Spring为各个平台如JDBC、Hibernate等都提供了对应的事务管理器。
+*
 * 11.spring配置文件有什么用？
 *   是个xml文件，描述了类信息，以及他们之间的依赖关系。
 * 12.什么是spring的ioc容器？
@@ -47,8 +53,18 @@
     无需在配置文件中描述java bean的依赖关系，spring ioc 容器会自动建立bean之间的依赖关系。
     32.spring支持的ORM框架有哪些？
         Hibernate,iBatis，
-    33.
+    33.BeanFactory和ApplicationContext有什么区别？
+    ApplicationContext由BeanFactory派生而来，因此具备了BeanFactory的所有功能。
+     扩展了MessageSource接口, 提供国际化的消息访问
+     资源访问，如URL和文件 扩展了ResourceLoader(资源加载器)接口，从而可以用来加载多个Resource
+     事件传播 主要通过ApplicationEvent和ApplicationListener这两个接口来提供的，即当ApplicationContext中发布一个事件的时，所有扩展了ApplicationListener的Bean都将会接受到这个事件，并进行相应的处理
+     载入多个（有继承关系）上下文 ，使得每一个上下文都专注于一个特定的层次，比如应用的web层。
+     BeanFactory延迟加载形式来注入Bean的，即只有在使用到某个Bean时(调用getBean())，才对该Bean进行加载实例化。
+     ApplicationContext则相反，它是在容器启动时，一次性创建了所有的Bean
 
+     FileSystemXmlApplicationContext ：从classpath的xml文件载入上下文定义信息
+     ClasspathXmlApplicationContext 从文件系统或者url指定的xml文件载入上下文定义信息
+     XmlWebApplicationContext 从Web系统中的XML文件载入上下文定义信息
 * */
 public class SpringTest {
     public static void main(String[] args){
